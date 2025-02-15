@@ -1,11 +1,11 @@
-import Mobile from "./components/mobile"
 import './App.css'
+import Mobile from './components/Mobile'
 
 function App() {
 
   return (
     <>
-      <Mobile />
+    <Mobile />
     </>
   )
 }

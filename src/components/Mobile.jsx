@@ -2,7 +2,7 @@ import React from 'react'
 import "./mobile.css"
 import logo from '../assets/logo.png'
 
-export default function Mobile() {
+function Mobile() {
     return (
         <div className='frame'>
             <div className='container'>
@@ -16,3 +16,5 @@ export default function Mobile() {
         </div>
     )
 }
+
+export default Mobile
