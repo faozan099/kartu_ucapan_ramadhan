@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.frame2 {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    background-image: url(../assets/desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 47%;
+    height: 80%;
+}
+
+.title{
+    font-family: 'Great Vibes', sans-serif;
+    color: #6E3613;
+    font-size: 68px;
+    font-weight: 500;
+    text-align: end;
+    width: 450px;
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+
+.year2{
+    font-family: "Scheherazade New", sans-serif;
+    background-color: #AB7A3A;
+    color: white;
+    font-size: 30px;
+    width: 30%;
+    margin-left: 24rem;
+    text-align: center;
+    font-style: italic;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+}
+
+.deskripsi2 {
+    font-family: 'Amiri', serif;
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    color: #A46738;
+    line-height: 1.3;
+    width: 75%;
+    margin-left: 7rem;
+    text-align: center;
+    padding: 0 0.3rem;
+}
+
+.logo2 {
+    margin-left: 3.2rem;
+    width: 30%;
+    margin-left: 17rem;
+    margin-top: 1.5rem;
+}

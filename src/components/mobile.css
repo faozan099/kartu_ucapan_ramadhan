@@ -31,7 +31,7 @@
     margin-bottom: 2px;
 }
 
-.greeting{
+.greeting {
     font-family: "great vibes", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -39,7 +39,7 @@
     margin: 4px 12px;
 }
 
-.year{
+.year {
     font-family: "Scheherazade New", sans-serif;
     background-color: #AB7A3A;
     color: white;
@@ -51,7 +51,7 @@
     font-size: 8px;
 }
 
-.deskription{
+.deskription {
     font-family: 'Amiri', serif;
     margin-top: 1rem;
     font-size: 11px;
