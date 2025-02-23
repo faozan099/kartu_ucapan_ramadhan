@@ -1,16 +1,20 @@
-import React from 'react'
+import logo from "../assets/logo.png"
+import imgspin from "../assets/imgspin.png"
+import test from "../assets/test.png"
 import "./mobile.css"
-import logo from '../assets/logo.png'
 
 function Mobile() {
     return (
         <div className='frame'>
             <div className='container'>
                 <div className='containerFlex'>
-                    <img src={logo} alt="logo" className='logo' />
-                    <p className='greeting'>Marhaband ya Ramadhan</p>
-                    <p className='year'>1445 Hijriah</p>
-                    <p className='deskription'>Sambut bulan suci Ramadhan dengan berbagi kebaikan, menyebarkan kedamaian, dan mempererat kasih sayang sesama.</p>
+                    <img src={logo} alt="" className="logo"/>
+                    <p className="deskripsi">Selamat menunaikan ibadah puasa Ramadhan 1446 H</p>
+                    <hr className="hr1"/>
+                    <hr className="hr2" />
+                    <p className="inc">PT SOVAA KARYA INDONESIA</p>
+                    <img src={test} className="test" alt="" />
+                    <img src={imgspin} alt="" className="imgspin"/>
                 </div>
             </div>
         </div>
