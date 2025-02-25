@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+*{
+    overflow-y: hidden;
+}
+
 .frame {
     width: 100%;
     background-image: url(../assets/mobile.webp);
@@ -38,7 +42,7 @@
 
 .hr1 {
     border: #9A6930 solid 1px;
-    width: 25%;
+    width: 30%;
     margin: auto;
 }
 
@@ -54,16 +58,47 @@
     margin-top: 1rem;
     text-align: center;
 }
-.test {
-    width: 40%;
+
+.ornamen {
+    width: 30%;
     position: absolute;
-    right: 100px;
-    opacity: 30%;
+    right: 35vw;
+    bottom: 22vh;
+    opacity: 35%;
 }
+
 .imgspin {
-    width: 80%;
+    width: 70%;
     position: absolute;
-    left: -90px;
-    top: -120px;
-    margin-top: 1.5rem;
+    left: -37vw;
+    top: -24vh;
+    filter: brightness(120%);
+    animation: spin 8s linear infinite;
+}
+
+.imgspin2 {
+    width: 60%;
+    position: absolute;
+    right: -40vw;
+    bottom: -20vh;
+    filter: brightness(120%);
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
