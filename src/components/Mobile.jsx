@@ -13,20 +13,26 @@ gsap.registerPlugin(TextPlugin)
 
 function Mobile() {
     const textRef = useRef(null)
-    useEffect(()=> {
+    useEffect(() => {
         gsap.to(textRef.current, {
             duration: 2,
             text: "PT SOVAA KARYA INDONESIA",
             ease: "none"
         }
-    )
+        )
     }, [])
 
-    useEffect(()=> {
-        Aos.init({duration: 1000, once: true});
+    useEffect(() => {
+        Aos.init({ duration: 1000, once: true });
         Aos.refresh()
     }, [])
-    
+
+    useEffect(() => {
+        const test = (e) => e.preventDefault()
+        document.addEventListener("touchmove", test, { passive: false })
+        return () => document.removeEventListener("touchmove", preventScroll);
+    }, [])
+
     return (
         <div className='frame'>
             <div className='container'>
