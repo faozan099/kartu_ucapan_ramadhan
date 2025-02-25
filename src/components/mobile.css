@@ -92,10 +92,10 @@ body {
 }
 
 .imgspin2 {
-    width: 60%;
+    width: 70%;
     position: absolute;
-    right: -40vw;
-    bottom: -12vh;
+    right: -46vw;
+    bottom: -14vh;
     filter: brightness(120%);
     animation: spin 8s linear infinite;
 }
