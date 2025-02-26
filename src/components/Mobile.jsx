@@ -32,14 +32,14 @@ function Mobile() {
         <div className='frame'>
             <div className='container'>
                 <div className='containerFlex'>
-                    <img src={logo} alt="" className="logo" data-aos="fade-down" />
+                    <img src={logo} alt="" className="logo" data-aos="fade-down" loading="lazy" />
                     <p className="deskripsi" data-aos="flip-down" >Selamat menunaikan ibadah puasa Ramadhan 1446 H</p>
                     <hr className="hr1" />
                     <hr className="hr2" />
                     <p className="inc" ref={textRef}></p>
-                    <img src={ornamen} className="ornamen" alt="" />
-                    <img src={imgspin} alt="imagespin" className="imgspin" />
-                    <img src={imgspin} alt="imagespin2" className="imgspin2" />
+                    <img src={ornamen} className="ornamen" alt="" loading="lazy" />
+                    <img src={imgspin} alt="imagespin" className="imgspin" loading="lazy"/>
+                    <img src={imgspin} alt="imagespin2" className="imgspin2" loading="lazy"/>
                 </div>
             </div>
         </div>
