@@ -1,12 +1,12 @@
 import './App.css'
-import Mobile from './components/Mobile'
+import Card from './components/Card'
 
 function App() {
 
 
   return (
     <>
-      <Mobile/>
+      <Card/>
     </>
   )
 }

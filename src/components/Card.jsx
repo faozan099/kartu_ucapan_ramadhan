@@ -1,20 +1,23 @@
 import gsap from "gsap"
 import logo from "../assets/logo.png"
+import logo2 from "../assets/logo2.png"
 import imgspin from "../assets/imgspin.png"
 import ornamen from "../assets/ornamen.png"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { TextPlugin } from "gsap/all"
 import Aos from "aos"
 import "aos/dist/aos.css"
-import "./mobile.css"
-
+import "./card.css"
+import { useMediaQuery } from "react-responsive"
 
 gsap.registerPlugin(TextPlugin)
 
-function Mobile() {
+function Card() {
+    const isDesktop = useMediaQuery({minWidth: 1280})
     const textRef = useRef(null)
-    useEffect(()=> {
-        Aos.init({duration: 2000, once: true});
+    useEffect(() => {
+
+        Aos.init({ duration: 2000, once: true });
         Aos.refresh()
 
         gsap.to(textRef.current, {
@@ -24,7 +27,7 @@ function Mobile() {
         })
 
         const preventScroll = (e) => e.preventDefault()
-        document.addEventListener("touchmove", preventScroll, {passive: false})
+        document.addEventListener("touchmove", preventScroll, { passive: false })
         return () => document.removeEventListener("touchmove", preventScroll);
     }, [])
 
@@ -32,7 +35,7 @@ function Mobile() {
         <div className='frame'>
             <div className='container'>
                 <div className='containerFlex'>
-                    <img src={logo} alt="" className="logo" data-aos="fade-down" loading="lazy" />
+                    <img src={isDesktop ? logo2 : logo} alt="" className="logo" data-aos="fade-down" loading="lazy" />
                     <p className="deskripsi" data-aos="flip-down" >Selamat menunaikan ibadah puasa Ramadhan 1446 H</p>
                     <hr className="hr1" />
                     <hr className="hr2" />
@@ -46,4 +49,4 @@ function Mobile() {
     )
 }
 
-export default Mobile
+export default Card
