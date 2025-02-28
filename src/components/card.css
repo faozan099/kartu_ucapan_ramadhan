@@ -384,7 +384,7 @@ body {
         height: 100vh;
         background-image: url(../assets/desktop.webp);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         padding: 0;
     }
@@ -422,15 +422,15 @@ body {
 
     .hr1 {
         border: #9A6930 solid 1px;
-        width: 36%;
-        margin-left: 19rem;
+        width: 24%;
+        margin-left: 22.5rem;
         margin-top: 4px;
     }
 
     .hr2 {
-        width: 55%;
+        width: 52%;
         border: #9A6930 solid 1px;
-        margin-left: 14.5rem;
+        margin-left: 15.5rem;
         margin-top: 12px;
     }
 
