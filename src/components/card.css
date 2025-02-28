@@ -151,11 +151,10 @@ body {
 
     .container {
         margin: auto;
-        height: 80vh;
+        height: 96%;
         width: 70%;
         display: flex;
         overflow: hidden;
-        border: solid 2px red;
     }
 
     .containerFlex {
@@ -187,7 +186,7 @@ body {
 
     .hr2 {
         border: #9A6930 solid 1.5px;
-        margin: 6px 20px;
+        margin: 12px 20px;
         width: 90%;
     }
 
@@ -199,6 +198,51 @@ body {
         text-align: center;
         font-family: 'Noto Sans', roboto;
     }
+    .ornamen {
+        width: 34%;
+        position: absolute;
+        bottom: 216px;
+        left: 271px;
+        opacity: 35%;
+    }
+    .imgspin {
+        width: 57%;
+        position: absolute;
+        left: -22vw;
+        top: -32vh;
+        filter: brightness(120%);
+        animation: spin 8slinear infinite;
+    }
+    
+    .imgspin2 {
+        width: 57%;
+        position: absolute;
+        right: -35vw;
+        bottom: -29vh;
+        filter: brightness(120%);
+        animation: spin2 8slinear infinite;
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+    
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin2 {
+        from {
+            transform: rotate(0deg);
+        }
+    
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
 
 }
 

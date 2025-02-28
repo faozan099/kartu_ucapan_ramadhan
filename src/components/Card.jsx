@@ -40,9 +40,9 @@ function Card() {
                     <hr className="hr1" />
                     <hr className="hr2" />
                     <p className="inc" ref={textRef}></p>
-                    {/* <img src={ornamen} className="ornamen" alt="" loading="lazy" />
+                    <img src={ornamen} className="ornamen" alt="" loading="lazy" />
                     <img src={imgspin} alt="imagespin" className="imgspin" loading="lazy"/>
-                    <img src={imgspin} alt="imagespin2" className="imgspin2" loading="lazy"/> */}
+                    <img src={imgspin} alt="imagespin2" className="imgspin2" loading="lazy"/>
                 </div>
             </div>
         </div>
