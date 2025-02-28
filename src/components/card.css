@@ -123,6 +123,85 @@ body {
     }
 }
 
+@media (min-width: 640px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        touch-action: none;
+    }
+
+    body {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .frame {
+        width: 100%;
+        height: 100vh;
+        background-image: url(../assets/mobile.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+    }
+
+    .container {
+        margin: auto;
+        height: 80vh;
+        width: 70%;
+        display: flex;
+        overflow: hidden;
+        border: solid 2px red;
+    }
+
+    .containerFlex {
+        margin: auto;
+        height: 43%;
+        width: 80%;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+
+    .deskripsi {
+        text-align: center;
+        font-size: 36px;
+        font-family: "Great Vibes", Roboto;
+        color: #9A6930;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    .hr1 {
+        border: #9A6930 solid 1.5px;
+        width: 30%;
+        margin: auto;
+    }
+
+    .hr2 {
+        border: #9A6930 solid 1.5px;
+        margin: 6px 20px;
+        width: 90%;
+    }
+
+    .inc {
+        color: rgb(106, 106, 106);
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 1rem;
+        text-align: center;
+        font-family: 'Noto Sans', roboto;
+    }
+
+}
+
 @media (min-width : 1280px) {
 
     html,
