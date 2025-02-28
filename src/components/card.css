@@ -123,7 +123,7 @@ body {
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 641px) {
     body {
         height: 100vh;
         width: 100vw;
@@ -205,6 +205,7 @@ body {
         left: 270px;
         opacity: 35%;
     }
+
     .imgspin {
         width: 57%;
         position: absolute;
@@ -242,7 +243,121 @@ body {
             transform: rotate(360deg);
         }
     }
-    
+}
+
+@media (min-width: 820px){
+    html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.frame {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.container {
+    margin: auto;
+    height: 92vh;
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+}
+
+.containerFlex {
+    margin: auto;
+    height: 43%;
+    width: 80%;
+}
+
+.logo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hr1 {
+    border: #9A6930 solid 1.5px;
+    width: 30%;
+    margin: auto;
+}
+
+.hr2 {
+    border: #9A6930 solid 1.5px;
+    margin: 12px 20px;
+    width: 90%;
+}
+
+.inc {
+    color: rgb(106, 106, 106);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Noto Sans', roboto;
+}
+.ornamen{
+    width: 32%;
+    position: absolute;
+    bottom: 210px;
+    left: 273px;
+    opacity: 35%;
+}
+.imgspin {
+    width: 57%;
+    position: absolute;
+    left: -22vw;
+    top: -32vh;
+    filter: brightness(120%);
+    animation: spin 8slinear infinite;
+}
+
+.imgspin2 {
+    width: 57%;
+    position: absolute;
+    right: -35vw;
+    bottom: -29vh;
+    filter: brightness(120%);
+    animation: spin2 8slinear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 }
 
@@ -290,7 +405,6 @@ body {
     .logo {
         width: 40%;
         margin-left: 20rem;
-        margin-top: -4rem;
         padding: 0;
     }
 
@@ -341,8 +455,8 @@ body {
     .imgspin {
         width: 12%;
         position: absolute;
-        top: -8vh;
-        left: 66vw;
+        top: 3vh;
+        left: 67vw;
         filter: brightness(60%);
         animation: spin 8slinear infinite;
     }
